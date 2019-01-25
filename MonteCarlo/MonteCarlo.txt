@@ -1,0 +1,28 @@
+import java.util.*;
+import javax.swing.*;
+
+public class MonteCarlo{
+	public static void Main(String[] args){
+		xd = aproximarPI(20);
+		System.out.println(xd);
+	}
+	
+	public static double aproximarPI(int numeroDardos){
+		int aciertos=0;
+		
+		double r,
+		x,
+		y,
+		PI;
+
+		for(int i = 0; i<numeroDardos; i++){
+			r = Math.random();
+			x = -1 + 2*r;
+			y = -1 + 2*r;
+			if(Math.sqrt(x*x + y*y) <= 1){
+				aciertos +=1;
+			}
+		}
+		PI = 4 * (aciertos/numeroDardos)
+		return PI;
+	}

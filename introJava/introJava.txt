@@ -1,0 +1,41 @@
+import javax.swing.*;
+public class introJava {
+	public static void main(String[] args){
+		calificacionUsario();
+		imprimirNumeros();
+		caloriasConsumidas();
+	}
+	public static void calificacionUsario(){
+		String strCalif = jOptionPane.showInputDialog("Escribe tu calificación");
+		int calificacion = Integer.parseInt(strCalif);
+		if (calificacion < 70) {
+			System.out.println("Reprobado");
+		} else {
+			System.out.println("Aprobado");
+		}
+	}
+	
+	public static void imprimirNumeros(){
+		for(int i = 1; i<=100;i++){
+			System.out.println("El número es " + i);
+		}
+	}
+	
+	public static void imprimirEnteros(entero){
+			
+		}
+
+	
+	public static void caloriasConsumidas(){
+		String strComidas = jOptionPane.showInputDialog("Escribe tu número de comidas");
+		int numeroComidas = Integer.parseInt(strComidas);
+		int totalCalorias = 0;
+		for(int i = 0; i<=numeroComidas;i++){
+			String strCalorias = jOptionPane.showInputDialog("Escribe las calorías que consumiste en tu comida #" + i);
+			int calorias = Integer.parseInt(strCalorias);
+			totalCalorias += calorias;
+		}
+		System.out.println("Consumiste un total de " + totalCalorias + "calorias.")
+	}
+}
+
