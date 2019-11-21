@@ -1,0 +1,31 @@
+public class Clock {
+	private int hr,
+		    min,
+		    sec;
+
+	public Clock() {
+		hr = 12;
+		min = 0;
+		sec = 0;
+	}
+
+	public Clock(int hr, int min, int sec) {
+		this.hr = hr;
+		this.min = min;
+		this.sec = sec;
+	}
+
+	public void setTime(int hr, int min, int sec) {
+		this.hr = hr;
+		this.min = min;
+		this.sec = sec;
+	}
+
+	public void printTime() {
+		System.out.println(this.hr + ":" + this.min + ":" + this.sec);
+	}
+
+	
+
+
+}
